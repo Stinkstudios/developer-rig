@@ -37,7 +37,7 @@ if (require.main === module) {
     fs.writeFileSync(certPath, pems.cert, { encoding: 'utf-8' });
     fs.writeFileSync(keyPath, pems.private, { encoding: 'utf-8' });
     if (process.platform === "darwin") {
-      shell.exec('./scripts/trust_cert_mac.sh ssl/selfsigned.crt');
+      shell.exec('sh ./scripts/trust_cert_mac.sh ssl/selfsigned.crt');
     } else {
       console.log("Please install the cert into your cert manager found at ssl/selfsigned.crt");
     }
