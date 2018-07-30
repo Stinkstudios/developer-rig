@@ -24,3 +24,4 @@ yarn-error.log*
 
 ssl/*.crt
 ssl/*.key
+config.json
